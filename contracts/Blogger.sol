@@ -4,6 +4,8 @@ pragma solidity ^0.8.9;
 contract Blogger {
     uint256 public s_count = 0;
 
+    mapping(address => Article) public artticle;
+
     struct Article {
         uint256 id;
         address owner;
